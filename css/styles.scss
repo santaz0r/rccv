@@ -4,20 +4,28 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 10px; // Необходимо чтобы легче переводить в rem
 }
 
 @import './normalize';
 @import './abstracts/variables';
+@import './abstracts/contacts';
 
 @import './header';
 @import './about';
+@import './blocks/user';
+@import './blocks/info';
+@import './blocks/profile';
 
 .page {
   background-color: $main-color;
   color: $text-color;
   padding: 40px;
   position: relative;
+
+  @media (max-width: 762px) {
+    padding: 55px 20px 40px;
+  }
 }
 
 h1,

@@ -2,4 +2,9 @@
   position: absolute;
   right: 40px;
   top: 26px;
+
+  @media (max-width: 762px) {
+    left: 40px;
+    right: unset;
+  }
 }

@@ -1,0 +1,86 @@
+.user {
+  background-color: $accent;
+
+  &__img {
+    height: 355px;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    background-color: $accent;
+    bottom: 0;
+    border-radius: 24px 24px 0 0;
+    &::after {
+      content: url('../assets/pfotoCurly.svg');
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__info {
+    position: relative;
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    padding: 24px;
+  }
+
+  &__name {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  &__contacts {
+    li {
+      list-style-type: none;
+      padding-left: 35px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  &__contact {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    &__info {
+      padding: 16px;
+      font-size: 1.6rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 762px) {
+    &__img {
+      img {
+        object-position: 0 35%;
+      }
+    }
+  }
+}
