@@ -1,2 +1,35 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
 @import './normalize';
 @import './abstracts/variables';
+
+@import './header';
+@import './about';
+
+.page {
+  background-color: $main-color;
+  color: $text-color;
+  padding: 40px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
