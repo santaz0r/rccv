@@ -329,6 +329,30 @@ template {
 .gh {
   background-position: 0 center;
   background-repeat: no-repeat;
+  position: relative;
+}
+.tg::after,
+.tel::after,
+.mail::after,
+.gh::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+.tg:hover::after,
+.tel:hover::after,
+.mail:hover::after,
+.gh:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
 }
 
 .tg {
@@ -468,6 +492,16 @@ template {
   margin-bottom: 32px;
   max-width: 690px;
   min-width: 320px;
+}
+.info__me p {
+  text-indent: 10px;
+}
+.info__me p span {
+  color: #f51b1b;
+}
+.info__me p code {
+  border-bottom: 1px solid #f51b1b;
+  font-style: italic;
 }
 @media (max-width: 762px) {
   .info {

@@ -8,6 +8,17 @@
     margin-bottom: 32px;
     max-width: 690px;
     min-width: 320px;
+
+    p {
+      text-indent: 10px;
+      span {
+        color: $accent;
+      }
+      code {
+        border-bottom: 1px solid $accent;
+        font-style: italic;
+      }
+    }
   }
 
   @media (max-width: 762px) {
